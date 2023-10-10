@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@idme/components": ["libs/components/src/index.ts"],
+      "storybook": ["libs/storybook/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
