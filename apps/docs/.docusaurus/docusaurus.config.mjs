@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "ID.me",
+  "title": "Documentation",
   "url": "https://idme.pages.github.io",
   "baseUrl": "/",
   "trailingSlash": false,
@@ -30,9 +30,9 @@ export default {
   ],
   "themeConfig": {
     "navbar": {
-      "title": "ID.me",
+      "title": "Documentation",
       "logo": {
-        "alt": "ID.me",
+        "alt": "Documentation",
         "src": "img/logo.svg"
       },
       "items": [
