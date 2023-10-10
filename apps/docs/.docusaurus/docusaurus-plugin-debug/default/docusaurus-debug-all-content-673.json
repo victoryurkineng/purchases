@@ -1,0 +1,72 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/",
+          "tagsPath": "/tags",
+          "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs",
+          "editUrlLocalized": "https://github.com/idme/front-end/edit/main/apps/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/victoryurkin/id.me/idme/apps/docs/sidebars.js",
+          "contentPath": "/Users/victoryurkin/id.me/idme/apps/docs/docs",
+          "contentPathLocalized": "/Users/victoryurkin/id.me/idme/apps/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "getting-started",
+              "id": "getting-started",
+              "title": "Getting Started",
+              "description": "",
+              "source": "@site/docs/getting-started.mdx",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/",
+              "draft": false,
+              "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/getting-started.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Getting Started",
+                "slug": "/"
+              },
+              "sidebar": "docsSidebar"
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "docsSidebar": [
+              {
+                "type": "doc",
+                "id": "getting-started"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": null
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}
