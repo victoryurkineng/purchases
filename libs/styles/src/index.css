@@ -1,0 +1,14 @@
+@import url('./colors.css');
+@import url('./spacing.css');
+@import url('./typography.css');
+
+html, body, h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  padding-left: var(--mega);
+  padding-right: var(--mega);
+  max-width: 1097px;
+}

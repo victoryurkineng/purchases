@@ -1,0 +1,41 @@
+:root {
+  --head-1-font-size: 40px;
+  --head-1-line-height: 50px;
+  --head-1-font-weight: 700;
+
+  --table-head-font-size: 16px;
+  --table-head-line-height: 24px;
+  --table-head-font-weight: 600;
+
+  --table-cell-font-size: 14px;
+  --table-cell-line-height: 21px;
+  --table-cell-font-weight: 400;
+
+  --table-cell-name-font-size: 16px;
+  --table-cell-name-line-height: 24px;
+  --table-cell-name-font-weight: 700;
+}
+
+.typo-head-1 {
+  font-size: var(--head-1-font-size);
+  line-height: var(--head-1-line-height);
+  font-weight: var(--head-1-font-weight);
+}
+
+.typo-table-head {
+  font-size: var(--table-head-font-size);
+  line-height: var(--table-head-line-height);
+  font-weight: var(--table-head-font-weight);
+}
+
+.typo-table-cell {
+  font-size: var(--table-cell-font-size);
+  line-height: var(--table-cell-line-height);
+  font-weight: var(--table-cell-font-weight);
+}
+
+.typo-table-cell-name {
+  font-size: var(--table-cell-name-font-size);
+  line-height: var(--table-cell-name-line-height);
+  font-weight: var(--table-cell-name-font-weight);
+}

@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "purchases": "Purchases"
+  },
+  "purchases": {
+    "name": "Name",
+    "location": "Location",
+    "purchase_date": "Purchase Date",
+    "category": "Category",
+    "description": "Description",
+    "price": "Price",
+    "currency": "{{val, currency(USD)}}"
+  }
+}

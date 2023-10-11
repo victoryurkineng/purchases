@@ -15,7 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@idme/clients-http": ["libs/clients/src/index.ts"],
       "@idme/components": ["libs/components/src/index.ts"],
+      "@idme/features-purchases": ["libs/features/purchases/src/index.tsx"],
+      "@idme/i18n": ["libs/i18n/src/index.ts"],
+      "@idme/models": ["libs/models/src/index.ts"],
+      "@idme/services": ["libs/services/src/index.ts"],
+      "@idme/styles": ["libs/styles/src/index.css"],
+      "account/*": ["apps/account/src/*"],
       "storybook": ["libs/storybook/src/index.ts"]
     }
   },

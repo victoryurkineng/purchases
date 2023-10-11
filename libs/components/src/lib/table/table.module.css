@@ -1,0 +1,35 @@
+/*
+ * All class names will be local to this component and will override className property
+*/
+.table {
+  display: block;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid var(--primary-100);
+  border-radius: 4px;
+}
+
+.thead {
+  border-bottom: 1px solid var(--primary-100);
+  padding-left: var(--2xl);
+  padding-right: var(--2xl);
+}
+
+.thead td, .tbody td {
+  padding: var(--sm);
+}
+
+.thead td:first-child, tbody td:first-child {
+  padding-left: var(--2xl);
+}
+
+.thead td:last-child, tbody td:last-child {
+  padding-right: var(--2xl);
+}
+
+.tbody td:first-child, .tbody td:last-child {
+  font-size: var(--table-cell-name-font-size);
+  line-height: var(--table-cell-name-line-height);
+  font-weight: var(--table-cell-name-font-weight);
+  text-transform: capitalize;
+}

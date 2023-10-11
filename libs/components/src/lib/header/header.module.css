@@ -1,0 +1,13 @@
+/*
+ * All class names will be local to this component and will override className property
+*/
+
+.container {
+  margin-top: var(--mega);
+  margin-bottom: var(--md);
+}
+
+.header {
+  color: var(--primary);
+  margin-bottom: var(--md);
+}

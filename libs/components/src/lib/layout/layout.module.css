@@ -1,0 +1,7 @@
+/*
+ * All class names will be local to this component and will override className property
+*/
+.container {
+  padding-top: var(--mega);
+  padding-bottom: var(--mega);
+}
