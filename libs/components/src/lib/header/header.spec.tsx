@@ -14,9 +14,7 @@ describe('Layout', () => {
   // Test default rendering, required props and children
   it('should render successfully', () => {
     const { baseElement, getByTestId } = render(
-      <Layout>
-        {propChildren}
-      </Layout>
+      <Layout>{propChildren}</Layout>
     );
     // redering is successful
     expect(baseElement).toBeTruthy();
@@ -29,9 +27,7 @@ describe('Layout', () => {
   // Test optional properties
   it('property > className', () => {
     const { getByTestId } = render(
-      <Layout className={propClassName}>
-        {propChildren}
-      </Layout>
+      <Layout className={propClassName}>{propChildren}</Layout>
     );
     expect(getByTestId(propTestId)).toHaveClass(propClassName);
   });

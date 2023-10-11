@@ -5,3 +5,7 @@
 .date {
   white-space: nowrap;
 }
+
+.icon {
+  cursor: pointer;
+}

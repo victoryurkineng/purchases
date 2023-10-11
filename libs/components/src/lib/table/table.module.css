@@ -28,8 +28,16 @@
   padding-left: var(--2xl);
 }
 
-.thead td:last-child, tbody td:last-child {
+.thead td:last-child {
   padding-right: var(--2xl);
+}
+
+.tbody td:last-child {
+  text-align: end;
+}
+
+.tbody td {
+  padding-bottom: var(--lg);
 }
 
 .tbody td:first-child, .tbody td:last-child {

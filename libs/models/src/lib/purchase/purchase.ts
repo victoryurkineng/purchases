@@ -8,6 +8,6 @@ export interface Purchase {
   purchaseDate: string;
   category: PurchaseCategory;
   description: string;
-  price: number; 
+  price: number;
   name: string;
 }

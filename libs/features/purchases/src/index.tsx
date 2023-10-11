@@ -31,15 +31,19 @@ export const Purchases = () => {
 
     loadPurchases();
   }, []);
-  
-  return <Layout title={t('headers.purchases')}>
-    {isLoading && <div>Loading...</div>}
-    
-    {!isLoading && error && <div>{error}</div>}
-    
-    {!isLoading && ! error && purchases && <>
-      <Table className={styles.table} purchases={purchases} />
-      <List className={styles.list} purchases={purchases} />
-    </>}
-  </Layout>;
+
+  return (
+    <Layout title={t('headers.purchases')}>
+      {isLoading && <div>Loading...</div>}
+
+      {!isLoading && error && <div>{error}</div>}
+
+      {!isLoading && !error && purchases && (
+        <>
+          <Table className={styles.table} purchases={purchases} />
+          <List className={styles.list} purchases={purchases} />
+        </>
+      )}
+    </Layout>
+  );
 };

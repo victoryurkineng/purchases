@@ -8,12 +8,14 @@ interface ImageProps {
   size?: 'small' | 'large';
 }
 
-export const Image: FC<ImageProps> = ({src, alt, size = 'large'}) => {
+export const Image: FC<ImageProps> = ({ src, alt, size = 'large' }) => {
   const sizeClasses = cx({
     [styles.small]: size === 'small',
     [styles.large]: size === 'large',
   });
-  return <div className={cx(styles.container, sizeClasses)}>
-    <img src={src} alt={alt} className={sizeClasses} />
-  </div>;
-}
+  return (
+    <div className={cx(styles.container, sizeClasses)}>
+      <img src={src} alt={alt} className={sizeClasses} />
+    </div>
+  );
+};

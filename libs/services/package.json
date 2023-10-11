@@ -2,7 +2,9 @@
   "name": "@idme/services",
   "version": "0.0.1",
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@idme/clients-http": "*",
+    "@idme/models": "*"
   },
   "type": "commonjs",
   "main": "./src/index.js",

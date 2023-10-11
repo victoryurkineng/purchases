@@ -10,9 +10,11 @@ interface ListProps {
 }
 
 export const List: FC<ListProps> = ({ purchases, className }) => {
-  return <ul className={cx(styles.list, className)}>
-  {
-    purchases.map((purchase, index) => <ListItem key={index} purchase={purchase}/>)
-  }
-</ul>
-}
+  return (
+    <ul className={cx(styles.list, className)}>
+      {purchases.map((purchase, index) => (
+        <ListItem key={index} purchase={purchase} />
+      ))}
+    </ul>
+  );
+};
