@@ -1,0 +1,7 @@
+.description::first-letter {
+  text-transform: uppercase;
+}
+
+.date {
+  white-space: nowrap;
+}

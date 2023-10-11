@@ -7,6 +7,7 @@
   border-spacing: 0;
   border: 1px solid var(--primary-100);
   border-radius: 4px;
+  overflow-y: scroll;
 }
 
 .thead {
@@ -17,6 +18,10 @@
 
 .thead td, .tbody td {
   padding: var(--sm);
+}
+
+.thead td {
+  white-space: nowrap;
 }
 
 .thead td:first-child, tbody td:first-child {

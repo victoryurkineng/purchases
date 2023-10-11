@@ -2,9 +2,11 @@
 @import url('./spacing.css');
 @import url('./typography.css');
 
-html, body, h1 {
+html, body, h1, p {
   padding: 0px;
   margin: 0px;
+  font-family: 'SourceSansPro', sans-serif;
+  color: black;
 }
 
 .container {
@@ -12,3 +14,11 @@ html, body, h1 {
   padding-right: var(--mega);
   max-width: 1097px;
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: var(--base);
+    padding-right: var(--base);
+  }
+}
+  

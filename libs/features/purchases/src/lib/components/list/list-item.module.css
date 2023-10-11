@@ -1,0 +1,33 @@
+.container {
+  border: 1px solid var(--primary-100);
+  border-radius: 10px;
+  padding-top: var(--base);
+  padding-bottom: var(--base);
+  padding-left: var(--md);
+  padding-right: var(--md);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h2 {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: var(--sm);
+  margin-right: var(--sm);
+  text-transform: capitalize;
+}
+
+.description {
+  margin-top: var(--xs);
+  margin-bottom: var(--sm);
+}
+
+.description::first-letter {
+  text-transform: uppercase;
+}
