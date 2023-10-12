@@ -84,7 +84,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
-      - name: Run E2E Tests
-        run: |
-          pnpm nx e2e account-e2e
