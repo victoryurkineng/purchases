@@ -1,0 +1,26 @@
+{
+  "unversionedId": "design-system",
+  "id": "design-system",
+  "title": "Design System",
+  "description": "",
+  "source": "@site/docs/design-system.mdx",
+  "sourceDirName": ".",
+  "slug": "/design-system",
+  "permalink": "/design-system",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/design-system.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Design System"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Code Design Patterns",
+    "permalink": "/design-patterns"
+  },
+  "next": {
+    "title": "Test Coverage",
+    "permalink": "/test-coverage"
+  }
+}

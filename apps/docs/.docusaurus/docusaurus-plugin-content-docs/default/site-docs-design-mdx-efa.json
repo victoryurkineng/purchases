@@ -1,0 +1,22 @@
+{
+  "unversionedId": "design",
+  "id": "design",
+  "title": "Design Patterns",
+  "description": "",
+  "source": "@site/docs/design.mdx",
+  "sourceDirName": ".",
+  "slug": "/design",
+  "permalink": "/design",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/design.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Design Patterns"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Tech Stack",
+    "permalink": "/stack"
+  }
+}

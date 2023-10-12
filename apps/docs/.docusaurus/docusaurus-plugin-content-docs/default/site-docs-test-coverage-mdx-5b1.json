@@ -1,0 +1,26 @@
+{
+  "unversionedId": "test-coverage",
+  "id": "test-coverage",
+  "title": "Test Coverage",
+  "description": "",
+  "source": "@site/docs/test-coverage.mdx",
+  "sourceDirName": ".",
+  "slug": "/test-coverage",
+  "permalink": "/test-coverage",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/test-coverage.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Test Coverage"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Design System",
+    "permalink": "/design-system"
+  },
+  "next": {
+    "title": "Deployment",
+    "permalink": "/deployment"
+  }
+}

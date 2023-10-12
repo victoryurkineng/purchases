@@ -1,15 +1,17 @@
-import { Layout } from './layout';
+import { Header } from './header';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof Layout> = {
-  component: Layout,
-  title: 'Layout',
+const meta: Meta<typeof Header> = {
+  component: Header,
+  title: 'Header',
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Layout>;
+type Story = StoryObj<typeof Header>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    title: 'Header Title',
+  },
 };

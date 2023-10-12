@@ -20,6 +20,80 @@
           "contentPathLocalized": "/Users/victoryurkin/id.me/idme/apps/docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "unversionedId": "deployment",
+              "id": "deployment",
+              "title": "Deployment",
+              "description": "",
+              "source": "@site/docs/deployment.mdx",
+              "sourceDirName": ".",
+              "slug": "/deployment",
+              "permalink": "/deployment",
+              "draft": false,
+              "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/deployment.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Deployment"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Test Coverage",
+                "permalink": "/test-coverage"
+              }
+            },
+            {
+              "unversionedId": "design-patterns",
+              "id": "design-patterns",
+              "title": "Code Design Patterns",
+              "description": "",
+              "source": "@site/docs/design-patterns.mdx",
+              "sourceDirName": ".",
+              "slug": "/design-patterns",
+              "permalink": "/design-patterns",
+              "draft": false,
+              "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/design-patterns.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Code Design Patterns"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Tech Stack",
+                "permalink": "/stack"
+              },
+              "next": {
+                "title": "Design System",
+                "permalink": "/design-system"
+              }
+            },
+            {
+              "unversionedId": "design-system",
+              "id": "design-system",
+              "title": "Design System",
+              "description": "",
+              "source": "@site/docs/design-system.mdx",
+              "sourceDirName": ".",
+              "slug": "/design-system",
+              "permalink": "/design-system",
+              "draft": false,
+              "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/design-system.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Design System"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Code Design Patterns",
+                "permalink": "/design-patterns"
+              },
+              "next": {
+                "title": "Test Coverage",
+                "permalink": "/test-coverage"
+              }
+            },
+            {
               "unversionedId": "getting-started",
               "id": "getting-started",
               "title": "Getting Started",
@@ -36,7 +110,63 @@
                 "title": "Getting Started",
                 "slug": "/"
               },
-              "sidebar": "docsSidebar"
+              "sidebar": "docsSidebar",
+              "next": {
+                "title": "Tech Stack",
+                "permalink": "/stack"
+              }
+            },
+            {
+              "unversionedId": "stack",
+              "id": "stack",
+              "title": "Tech Stack",
+              "description": "",
+              "source": "@site/docs/stack.mdx",
+              "sourceDirName": ".",
+              "slug": "/stack",
+              "permalink": "/stack",
+              "draft": false,
+              "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/stack.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Tech Stack"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Getting Started",
+                "permalink": "/"
+              },
+              "next": {
+                "title": "Code Design Patterns",
+                "permalink": "/design-patterns"
+              }
+            },
+            {
+              "unversionedId": "test-coverage",
+              "id": "test-coverage",
+              "title": "Test Coverage",
+              "description": "",
+              "source": "@site/docs/test-coverage.mdx",
+              "sourceDirName": ".",
+              "slug": "/test-coverage",
+              "permalink": "/test-coverage",
+              "draft": false,
+              "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/test-coverage.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Test Coverage"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Design System",
+                "permalink": "/design-system"
+              },
+              "next": {
+                "title": "Deployment",
+                "permalink": "/deployment"
+              }
             }
           ],
           "drafts": [],
@@ -45,6 +175,26 @@
               {
                 "type": "doc",
                 "id": "getting-started"
+              },
+              {
+                "type": "doc",
+                "id": "stack"
+              },
+              {
+                "type": "doc",
+                "id": "design-patterns"
+              },
+              {
+                "type": "doc",
+                "id": "design-system"
+              },
+              {
+                "type": "doc",
+                "id": "test-coverage"
+              },
+              {
+                "type": "doc",
+                "id": "deployment"
               }
             ]
           }

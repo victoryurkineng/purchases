@@ -1,0 +1,26 @@
+{
+  "unversionedId": "stack",
+  "id": "stack",
+  "title": "Tech Stack",
+  "description": "",
+  "source": "@site/docs/stack.mdx",
+  "sourceDirName": ".",
+  "slug": "/stack",
+  "permalink": "/stack",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/stack.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Tech Stack"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "Code Design Patterns",
+    "permalink": "/design-patterns"
+  }
+}

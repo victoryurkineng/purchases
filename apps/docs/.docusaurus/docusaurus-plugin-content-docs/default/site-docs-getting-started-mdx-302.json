@@ -15,5 +15,9 @@
     "title": "Getting Started",
     "slug": "/"
   },
-  "sidebar": "docsSidebar"
+  "sidebar": "docsSidebar",
+  "next": {
+    "title": "Tech Stack",
+    "permalink": "/stack"
+  }
 }

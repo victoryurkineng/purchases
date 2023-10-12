@@ -55,29 +55,30 @@ jobs:
           RUN=CI pnpm nx affected:test --base=origin/main~1 --parallel 5
           pnpm nx affected:lint --base=origin/main~1 --parallel 5
 
-      - name: Build
+      - name: Build Account App
         run: |
-          pnpm nx affected:build --base=origin/main~1 --parallel 5 --prod --with-deps
+          pnpm nx build account --prod --with-deps
 
-      - name: Affected apps
+      - name: Build Documentation
         run: |
-          APPS=$(pnpm nx print-affected --type=app --select=projects --base=origin/main~1 | cut -d, -f1)
-          echo "Affected applications: $APPS"
-          echo "AFFECTED_APPS=$(echo $APPS)" >> $GITHUB_ENV
+          pnpm nx build docs --prod --with-deps
+
+      - name: Build Storybook
+        run: |
+          pnpm nx build storybook --prod --with-deps
       
       - name: Prepare Pages
         run: |
           chmod +x .github/scripts/pages.sh
           ./.github/scripts/pages.sh
         shell: bash
-
+      
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
           path: './ready'
 
       - name: Deploy to GitHub Pages

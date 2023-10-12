@@ -1,0 +1,22 @@
+{
+  "unversionedId": "deployment",
+  "id": "deployment",
+  "title": "Deployment",
+  "description": "",
+  "source": "@site/docs/deployment.mdx",
+  "sourceDirName": ".",
+  "slug": "/deployment",
+  "permalink": "/deployment",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/deployment.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Deployment"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Test Coverage",
+    "permalink": "/test-coverage"
+  }
+}

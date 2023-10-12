@@ -15,6 +15,11 @@
 const sidebars = {
   docsSidebar: [
     'getting-started',
+    'stack',
+    'design-patterns',
+    'design-system',
+    'test-coverage',
+    'deployment',
   ],
 };
 

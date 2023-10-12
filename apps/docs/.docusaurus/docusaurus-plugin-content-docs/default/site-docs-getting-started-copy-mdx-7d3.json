@@ -1,0 +1,18 @@
+{
+  "unversionedId": "getting-started copy",
+  "id": "getting-started copy",
+  "title": "Getting Started",
+  "description": "",
+  "source": "@site/docs/getting-started copy.mdx",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/getting-started copy.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Getting Started",
+    "slug": "/"
+  }
+}
