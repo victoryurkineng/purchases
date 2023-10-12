@@ -13,6 +13,6 @@ pnpm nx run-many --target=build
 6. Github Actions will run unit tests and lint for each PR
 7. Merge your PR to `main` and delete your branch
 8. Github Actions will run unit tests, lint, build, e2e tests and will deploy `main` branch code to Github Pages:
-    - Account app: https://victoryurkineng.github.io/purchases/account/
+    - Account app: https://victoryurkineng.github.io/purchases/app/
     - Documentation: https://victoryurkineng.github.io/purchases/docs/
     - Storybook: https://victoryurkineng.github.io/purchases/storybook/

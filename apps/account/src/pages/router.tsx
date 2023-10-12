@@ -3,11 +3,11 @@ import '@idme/styles';
 
 import { Purchases } from '@idme/features-purchases';
 
-// const basename = import.meta.env.BASE_URL || '/';
+const basename = import.meta.env.BASE_URL || '/';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Purchases />} />
       </Routes>

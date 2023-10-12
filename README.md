@@ -2,7 +2,7 @@
 
 The following applications have been deployed to GitHub Pages:
 
-- Account App: https://victoryurkineng.github.io/purchases/account/
+- Account App: https://victoryurkineng.github.io/purchases/app/
 - Documentation: https://victoryurkineng.github.io/purchases/docs/
 - Storybook: https://victoryurkineng.github.io/purchases/storybook/
 
