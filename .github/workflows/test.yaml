@@ -1,12 +1,10 @@
 name: Test
+run-name: Test
 
 on:
   pull_request:
     branches:
       - main
-
-name: 1. Test
-run-name: Test
 
 jobs:
   test:
