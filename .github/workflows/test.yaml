@@ -1,5 +1,5 @@
-name: Test
-run-name: Test
+name: 1. Test
+run-name: 1. Test
 
 on:
   pull_request:

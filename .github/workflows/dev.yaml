@@ -1,0 +1,80 @@
+name: 2. Dev Build & Deploy
+run-name: 2. Dev Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "docs/**"
+      - "README.md"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup NodeJS 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Get pnpm cache directory path
+        id: pnpm-cache-dir-path
+        run: echo "::set-output name=dir::$(pnpm config get cacheFolder)"
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v2
+        id: pnpm-cache
+        with:
+          path: |
+            ${{ steps.pnpm-cache-dir-path.outputs.dir }}
+            **\node_modules
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
+        if: steps.pnpm-cache.outputs.cache-hit != 'true'
+        run: pnpm install
+
+      - name: Test
+        run: |
+          RUN=CI pnpm nx affected:test --base=origin/main~1 --parallel 5
+          pnpm nx affected:lint --base=origin/main~1 --parallel 5
+
+      - name: Build
+        run: |
+          pnpm nx affected:build --base=origin/main~1 --parallel 5 --prod --with-deps
+
+      - name: Affected apps
+        run: |
+          APPS=$(pnpm nx print-affected --type=app --select=projects --base=origin/main~1 | cut -d, -f1)
+          echo "Affected applications: $APPS"
+          echo "AFFECTED_APPS=$(echo $APPS)" >> $GITHUB_ENV
+      
+      - name: Prepare Pages
+        run: |
+          chmod +x .github/scripts/pages.sh
+          ./.github/scripts/pages.sh
+        shell: bash
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: './ready'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
