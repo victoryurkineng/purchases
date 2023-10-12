@@ -3,6 +3,8 @@ import '@idme/styles';
 
 import { Purchases } from '@idme/features-purchases';
 
+// const basename = import.meta.env.BASE_URL || '/';
+
 export function App() {
   return (
     <BrowserRouter>

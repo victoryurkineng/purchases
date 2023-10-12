@@ -7,7 +7,7 @@ const title = 'Documentation';
 const config = {
   title,
   url: 'https://idme.pages.github.io/',
-  baseUrl: '/',
+  baseUrl: '/purchases/docs/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

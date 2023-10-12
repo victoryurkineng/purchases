@@ -4,6 +4,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/account',
+  base: process.env.REACT_APP_PUBLIC_URL || '/',
 
   server: {
     port: 4200,
