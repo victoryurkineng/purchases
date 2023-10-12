@@ -1,0 +1,26 @@
+{
+  "unversionedId": "design-patterns",
+  "id": "design-patterns",
+  "title": "Code Design Patterns",
+  "description": "",
+  "source": "@site/docs/design-patterns.mdx",
+  "sourceDirName": ".",
+  "slug": "/design-patterns",
+  "permalink": "/design-patterns",
+  "draft": false,
+  "editUrl": "https://github.com/idme/front-end/edit/main/apps/docs/docs/design-patterns.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Code Design Patterns"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Tech Stack",
+    "permalink": "/stack"
+  },
+  "next": {
+    "title": "Design System",
+    "permalink": "/design-system"
+  }
+}

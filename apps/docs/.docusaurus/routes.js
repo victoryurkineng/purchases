@@ -39,11 +39,41 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '1a5'),
+    component: ComponentCreator('/', '129'),
     routes: [
       {
         path: '/',
         component: ComponentCreator('/', '9dd'),
+        exact: true,
+        sidebar: "docsSidebar"
+      },
+      {
+        path: '/deployment',
+        component: ComponentCreator('/deployment', 'e78'),
+        exact: true,
+        sidebar: "docsSidebar"
+      },
+      {
+        path: '/design-patterns',
+        component: ComponentCreator('/design-patterns', '96c'),
+        exact: true,
+        sidebar: "docsSidebar"
+      },
+      {
+        path: '/design-system',
+        component: ComponentCreator('/design-system', '336'),
+        exact: true,
+        sidebar: "docsSidebar"
+      },
+      {
+        path: '/stack',
+        component: ComponentCreator('/stack', '947'),
+        exact: true,
+        sidebar: "docsSidebar"
+      },
+      {
+        path: '/test-coverage',
+        component: ComponentCreator('/test-coverage', '727'),
         exact: true,
         sidebar: "docsSidebar"
       }

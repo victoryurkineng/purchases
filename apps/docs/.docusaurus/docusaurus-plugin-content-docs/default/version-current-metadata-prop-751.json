@@ -14,13 +14,73 @@
         "label": "Getting Started",
         "href": "/",
         "docId": "getting-started"
+      },
+      {
+        "type": "link",
+        "label": "Tech Stack",
+        "href": "/stack",
+        "docId": "stack"
+      },
+      {
+        "type": "link",
+        "label": "Code Design Patterns",
+        "href": "/design-patterns",
+        "docId": "design-patterns"
+      },
+      {
+        "type": "link",
+        "label": "Design System",
+        "href": "/design-system",
+        "docId": "design-system"
+      },
+      {
+        "type": "link",
+        "label": "Test Coverage",
+        "href": "/test-coverage",
+        "docId": "test-coverage"
+      },
+      {
+        "type": "link",
+        "label": "Deployment",
+        "href": "/deployment",
+        "docId": "deployment"
       }
     ]
   },
   "docs": {
+    "deployment": {
+      "id": "deployment",
+      "title": "Deployment",
+      "description": "",
+      "sidebar": "docsSidebar"
+    },
+    "design-patterns": {
+      "id": "design-patterns",
+      "title": "Code Design Patterns",
+      "description": "",
+      "sidebar": "docsSidebar"
+    },
+    "design-system": {
+      "id": "design-system",
+      "title": "Design System",
+      "description": "",
+      "sidebar": "docsSidebar"
+    },
     "getting-started": {
       "id": "getting-started",
       "title": "Getting Started",
+      "description": "",
+      "sidebar": "docsSidebar"
+    },
+    "stack": {
+      "id": "stack",
+      "title": "Tech Stack",
+      "description": "",
+      "sidebar": "docsSidebar"
+    },
+    "test-coverage": {
+      "id": "test-coverage",
+      "title": "Test Coverage",
       "description": "",
       "sidebar": "docsSidebar"
     }

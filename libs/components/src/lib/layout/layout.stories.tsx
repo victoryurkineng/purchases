@@ -11,5 +11,7 @@ export default meta;
 type Story = StoryObj<typeof Layout>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    title: 'Layout Title',
+  },
 };

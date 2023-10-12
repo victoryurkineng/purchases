@@ -11,8 +11,33 @@
           "mainDocId": "getting-started",
           "docs": [
             {
+              "id": "deployment",
+              "path": "/deployment",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "design-patterns",
+              "path": "/design-patterns",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "design-system",
+              "path": "/design-system",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "getting-started",
               "path": "/",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "stack",
+              "path": "/stack",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "test-coverage",
+              "path": "/test-coverage",
               "sidebar": "docsSidebar"
             }
           ],
