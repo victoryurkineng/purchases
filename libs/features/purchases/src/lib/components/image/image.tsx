@@ -15,7 +15,13 @@ export const Image: FC<ImageProps> = ({ src, alt, size = 'large' }) => {
   });
   return (
     <div className={cx(styles.container, sizeClasses)}>
-      <img src={src} alt={alt} className={sizeClasses} />
+      <object data={src} type="image/jpg">
+        <img
+          src="https://victoryurkineng.github.io/purchases/app/images/no-image.jpg"
+          alt={alt}
+          className={sizeClasses}
+        />
+      </object>
     </div>
   );
 };

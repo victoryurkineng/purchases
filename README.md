@@ -1,3 +1,6 @@
+## Please, read full documentation here:
+https://victoryurkineng.github.io/purchases/docs/
+
 ## Resources
 
 The following applications have been deployed to GitHub Pages:
@@ -16,6 +19,10 @@ The CI/CD is fully automated with GitHub Actions, including unit test coverage, 
 
 - [Node.js](https://nodejs.org/en) (v16 is recommended)
 - [pnpm](https://pnpm.io/installation)
+
+```bash
+npm install -g pnpm
+```
 
 ### Install Dependencies
 
