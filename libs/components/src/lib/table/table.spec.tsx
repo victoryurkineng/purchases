@@ -1,76 +1,30 @@
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Layout } from './layout';
+import { Table, THead, TBody, Tr, Td } from './table';
 
-// Common default properties for each component
 const propClassName = 'some-class';
-const propId = 'some-id';
-const propTestId = 'some-testid';
-const propAriaLabel = 'some-aria-label';
-const propChildren = 'Content';
-const propT = 'some-i18n-key';
+const propHead = 'Head';
+const propBody = 'Body';
 
-describe('Layout', () => {
-  // Test default rendering, required props and children
+describe('Table', () => {
   it('should render successfully', () => {
-    const { baseElement, getByTestId } = render(
-      <Layout>{propChildren}</Layout>
+    const { baseElement, getByText } = render(
+      <Table className={propClassName}>
+        <THead>
+          <Tr>
+            <Td>{propHead}</Td>
+          </Tr>
+        </THead>
+        <TBody>
+          <Tr>
+            <Td>{propBody}</Td>
+          </Tr>
+        </TBody>
+      </Table>
     );
     // redering is successful
     expect(baseElement).toBeTruthy();
-    // prop size
-    expect(getByTestId(propTestId)).toHaveClass('text-sm');
-    // prop children
-    expect(getByTestId(propTestId)).toHaveTextContent(propChildren);
-  });
-
-  // Test optional properties
-  it('property > className', () => {
-    const { getByTestId } = render(
-      <Layout className={propClassName}>{propChildren}</Layout>
-    );
-    expect(getByTestId(propTestId)).toHaveClass(propClassName);
-  });
-
-  it('property > id', () => {
-    const { getByTestId } = render(
-      <Layout testId={propTestId} id={propId}>
-        {propChildren}
-      </Layout>
-    );
-    expect(getByTestId(propTestId)).toHaveAttribute('id', propId);
-  });
-
-  it('property > ariaLabel', () => {
-    const { getByTestId } = render(
-      <Layout testId={propTestId} ariaLabel={propAriaLabel}>
-        {propChildren}
-      </Layout>
-    );
-    expect(getByTestId(propTestId)).toHaveAttribute(
-      'aria-label',
-      propAriaLabel
-    );
-  });
-
-  it('property > t', () => {
-    const { getByTestId } = render(
-      <Layout testId={propTestId} t={propT}>
-        {propChildren}
-      </Layout>
-    );
-    expect(getByTestId(propTestId)).toHaveAttribute('data-t', propT);
-  });
-
-  // Handlers and other methods
-  it('should handle a click event', () => {
-    const mock = vitest.fn();
-    const { getByTestId } = render(
-      <Layout testId={propTestId} onClick={mock}>
-        {propChildren}
-      </Layout>
-    );
-    fireEvent.click(getByTestId(propTestId));
-    expect(mock).toHaveBeenCalled();
+    expect(getByText(propHead)).toBeVisible();
+    expect(getByText(propBody)).toBeVisible();
   });
 });

@@ -27,10 +27,6 @@ export const updateConfig = (httpConfig?: HttpConfig) => {
     if (config && httpConfig && httpConfig.accessToken) {
       if (config.headers) {
         config.headers['Authorization'] = `Bearer ${httpConfig.accessToken}`;
-      } else {
-        config.headers = {
-          Authorization: `Bearer ${httpConfig.accessToken}`,
-        };
       }
     }
     // Path params
